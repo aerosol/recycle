@@ -23,7 +23,8 @@ defmodule Gencycle.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:gen_cycle, "1.0.2"}
+      {:gen_cycle, "1.0.2"},
+      {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
 

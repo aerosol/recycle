@@ -1,0 +1,3 @@
+%{
+  "gen_cycle": {:hex, :gen_cycle, "1.0.2", "168f1dab0de3081565e47358f62d00e2127d75850630bd2fd83d158153de593c", [:rebar3], [], "hexpm"},
+}

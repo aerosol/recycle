@@ -4,10 +4,12 @@ defmodule Gencycle.MixProject do
   def project do
     [
       app: :gencycle,
+      description: "Convenience wrapper around gen_cycle behaviour",
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      package: package()
     ]
   end
 
@@ -22,6 +24,14 @@ defmodule Gencycle.MixProject do
   defp deps do
     [
       {:gen_cycle, "1.0.2"}
+    ]
+  end
+
+  defp package do
+    [
+      maintainers: ["Adam Rutkowski"],
+      licenses: ["Apache2"],
+      links: %{"GitHub" => "https://github.com/aerosol/gencycle"}
     ]
   end
 end

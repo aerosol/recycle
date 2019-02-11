@@ -1,5 +1,7 @@
 # Recycle
 
+[![Hex.pm](https://img.shields.io/hexpm/v/recycle.svg)](https://hex.pm/packages/recycle)
+
 Convenience wrapper around [gen_cycle](https://hex.pm/packages/gen_cycle) behaviour.
 
 Provides a `__using__/1` macro for generating the cycle callback module.

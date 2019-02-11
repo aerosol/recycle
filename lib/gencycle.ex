@@ -10,10 +10,12 @@ defmodule Recycle do
       defmodule EveryMinute do
         use Recycle, interval: :timer.seconds(60)
 
+        @impl true
         def init_user_state(_opts) do
           %{work: fn -> do_work() end}
         end
 
+        @impl true
         def handle_user_cycle(%{work: fun} = state) do
           fun.()
           {:hibernate, state}

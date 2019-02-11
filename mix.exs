@@ -32,7 +32,7 @@ defmodule Gencycle.MixProject do
     [
       maintainers: ["Adam Rutkowski"],
       licenses: ["Apache2"],
-      links: %{"GitHub" => "https://github.com/aerosol/gencycle"}
+      links: %{"GitHub" => "https://github.com/aerosol/recycle"}
     ]
   end
 end

@@ -7,18 +7,18 @@ defmodule Recycle do
 
   Usage:
 
-    defmodule EveryMinute do
-      use Recycle, interval: :timer.seconds(60)
+      defmodule EveryMinute do
+        use Recycle, interval: :timer.seconds(60)
 
-      def init_user_state(_opts) do
-        %{work: fn -> do_work() end}
-      end
+        def init_user_state(_opts) do
+          %{work: fn -> do_work() end}
+        end
 
-      def handle_user_cycle(%{work: fun} = state) do
-        fun.()
-        {:hibernate, state}
+        def handle_user_cycle(%{work: fun} = state) do
+          fun.()
+          {:hibernate, state}
+        end
       end
-    end
   """
 
   @callback init_user_state(list) :: any()

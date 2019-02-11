@@ -1,6 +1,13 @@
 # Recycle
 
-**TODO: Add description**
+Convenience wrapper around [gen_cycle](https://hex.pm/packages/gen_cycle) behaviour.
+
+Provides a `__using__/1` macro for generating the cycle callback module.
+
+By default, skips the first cycle which is usually what you want when
+applications such as `Ecto.Repo` start asynchronously.
+
+Refer to the test suite for sample usage.
 
 ## Installation
 

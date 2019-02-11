@@ -1,8 +1,8 @@
-defmodule GenCycleTest do
+defmodule RecycleTest do
   use ExUnit.Case, async: true
 
   defmodule Dummy do
-    use GenCycle, interval: 500
+    use Recycle, interval: 500
 
     @impl true
     def init_user_state(opts), do: Enum.into(opts, %{})

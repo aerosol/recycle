@@ -1,4 +1,4 @@
-defmodule GenCycle do
+defmodule Recycle do
   @moduledoc """
   Convienience wrapper around `:gen_cycle` behaviour for periodic, supervised 
   task execution.
@@ -8,7 +8,7 @@ defmodule GenCycle do
   Usage:
 
     defmodule EveryMinute do
-      use GenCycle, interval: :timer.seconds(60)
+      use Recycle, interval: :timer.seconds(60)
 
       def init_user_state(_opts) do
         %{work: fn -> do_work() end}
@@ -30,7 +30,7 @@ defmodule GenCycle do
   defmacro __using__(use_opts) do
     quote do
       @behaviour :gen_cycle
-      @behaviour GenCycle
+      @behaviour Recycle
       require Logger
 
       def start(opts) do

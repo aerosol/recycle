@@ -3,7 +3,7 @@ defmodule Gencycle.MixProject do
 
   def project do
     [
-      app: :gencycle,
+      app: :recycle,
       description: "Convenience wrapper around gen_cycle behaviour",
       version: "0.1.0",
       elixir: "~> 1.7",

@@ -1,4 +1,4 @@
-# Gencycle
+# Recycle
 
 **TODO: Add description**
 
@@ -10,7 +10,7 @@ by adding `gencycle` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:gencycle, "~> 0.1.0"}
+    {:recycle, "~> 0.1.0"}
   ]
 end
 ```

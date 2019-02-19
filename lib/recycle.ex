@@ -26,7 +26,7 @@ defmodule Recycle do
   @callback init_user_state(list) :: any()
   @callback handle_user_cycle(any()) ::
               {:continue, any()}
-              | {:hibernate, any()}
+              | {:continue_hibernated, any()}
               | {:stop, any()}
 
   defmacro __using__(use_opts) do

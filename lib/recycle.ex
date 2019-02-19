@@ -46,7 +46,7 @@ defmodule Recycle do
       def init_cycle(opts) do
         i = Keyword.fetch!(opts, :interval)
 
-        Logger.info("Initializing cycle: #{__MODULE__} (interval: #{i}ms)")
+        Logger.info("Initializing cycle: #{__MODULE__} - #{inspect(opts)}")
 
         {:ok, {i, %{user_state: init_user_state(opts), skip_one_cycle: true}}}
       end
